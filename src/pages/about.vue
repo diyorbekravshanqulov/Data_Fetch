@@ -71,7 +71,7 @@
     debitis ullam illo ratione nulla dolorum necessitatibus velit dolore dignissimos et labore veritatis!
   </p>
 
-  <router-link to="/">Home</router-link>
+  <!-- <router-link to="/">Home</router-link> -->
 </div></template>
 
 <script setup>

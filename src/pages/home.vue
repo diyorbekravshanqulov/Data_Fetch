@@ -10,7 +10,6 @@
 </template>
 
 <script setup>
-import Navbar from '../components/Navbar.vue';
 import OurProjects from '../components/OurProjects.vue';
 
 

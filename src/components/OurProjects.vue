@@ -14,7 +14,7 @@
       </div>
 
       <div class="grid md:grid-cols-3 gap-5">
-        <div v-for="item in 3" :class="item == 1 ? 'col-span-2 row-span-2 ' : ''" class=" relative overflow-hidden group">
+        <div v-for="item in 3" :class="item == 1 ? 'col-span-2 row-span-2c c ' : ''" class=" relative overflow-hidden group">
           <div :class="item == 1 ? 'w-[50%] ' : 'w-full'"
             class=" absolute top-0 duration-300 group-hover:left-0 -left-full h-full bg-gradient-to-br from-[#1C1E536B]/40 to-[#1C1E53]">
             <h1>Lorem, ipsum dolor.</h1>
