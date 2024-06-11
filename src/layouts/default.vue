@@ -5,7 +5,8 @@
 
 <template>
   <div>
-    <Navbar />
+    <!-- <Navbar /> -->
+    
     <router-view />
     <!-- <Footer /> -->
   </div>
