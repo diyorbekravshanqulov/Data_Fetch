@@ -2,6 +2,7 @@
 import { ref } from "vue";
 import { useProducats } from "@/composable/useProducats";
 import Temp from "../components/Temp.vue";
+import Loading from "../components/Loading.vue";
 
 const limit = ref(8);
 const skip = ref(0);
@@ -19,7 +20,8 @@ fetchProducts(); // Initial fetch
   <div class="h-[80px]"></div>
   <Temp />
   <div>
-    <div v-if="loading" class="text-center py-5">Loading ...</div>
+    <Loading v-if="loading" />
+    <!-- <div v-if="loading" class="text-center py-5">Loading ...</div> -->
     <div v-else-if="error" class="text-center py-5 text-red-500">
       Error loading products
     </div>
