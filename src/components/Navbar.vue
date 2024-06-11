@@ -24,11 +24,12 @@ const logout = () => {
       <div class="flex justify-between gap-x-5">
 
         <div>
-<!-- 
+
           <router-link class="[&.router-link-active]:bg-red-500" to="/home">Home</router-link>
           <router-link class="[&.router-link-active]:bg-red-500" to="/about">About</router-link>
           <router-link class="[&.router-link-active]:bg-red-500" to="/products">Products</router-link>
-          <router-link class="[&.router-link-active]:bg-red-500" to="/posts">Posts</router-link> -->
+          <router-link class="[&.router-link-active]:bg-red-500" to="/posts">Posts</router-link>
+          <router-link class="[&.router-link-active]:bg-red-500" to="/composable">composable</router-link>
 
         </div>
         <div>

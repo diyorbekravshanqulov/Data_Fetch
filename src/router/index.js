@@ -5,60 +5,62 @@ import home from '../pages/home.vue'
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-
     {
-      path: '/',
-      component: () => import('@/layouts/default.vue'),
-      redirect: '/home',
+      path: "/",
+      component: () => import("@/layouts/default.vue"),
+      redirect: "/home",
       children: [
         {
-          path: '/home',
-          name: 'home',
-          component: home
+          path: "/home",
+          name: "home",
+          component: home,
         },
         {
-          path: '/about',
-          name: 'about',
-          component: () => import('@/pages/about.vue')
+          path: "/about",
+          name: "about",
+          component: () => import("@/pages/about.vue"),
         },
         {
-          path: '/products',
-          name: 'products',
-          component: () => import('@/pages/products.vue')
+          path: "/composable",
+          name: "composable",
+          component: () => import("@/pages/composable.vue"),
         },
         {
-          path: '/posts',
-          name: 'posts',
-          component: () => import('@/pages/posts.vue')
+          path: "/products",
+          name: "products",
+          component: () => import("@/pages/products.vue"),
         },
         {
-          path: '/products/:id',
-          name: 'product-detail',
-          component: () => import('@/pages/product-details.vue')
+          path: "/posts",
+          name: "posts",
+          component: () => import("@/pages/posts.vue"),
         },
-      ]
+        {
+          path: "/products/:id",
+          name: "product-detail",
+          component: () => import("@/pages/product-details.vue"),
+        },
+      ],
     },
 
     {
-      path: '',
-      component: () => import('@/layouts/authLayout.vue'),
+      path: "",
+      component: () => import("@/layouts/authLayout.vue"),
       children: [
         {
-          path: '/login',
-          name: 'login',
-          component: () => import('@/pages/auth/login.vue')
+          path: "/login",
+          name: "login",
+          component: () => import("@/pages/auth/login.vue"),
         },
         {
-          path: '/register',
-          name: 'register',
-          component: () => import('@/pages/auth/register.vue')
+          path: "/register",
+          name: "register",
+          component: () => import("@/pages/auth/register.vue"),
         },
-      ]
-    }
-
-
-  ]
-})
+      ],
+    },
+  ],
+});
 
 
 router.beforeEach((to, from) => {

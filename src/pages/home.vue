@@ -1,4 +1,5 @@
 <template>
+  <Navbar />
   <div class="py-10">
     <div class="container">
 
@@ -11,7 +12,7 @@
 
 <script setup>
 import OurProjects from '../components/OurProjects.vue';
-
+import Navbar from '../components/Navbar.vue'
 
 </script>
 
